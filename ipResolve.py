@@ -7,40 +7,45 @@ from concurrent.futures import ThreadPoolExecutor as PoolExecutor
 ################################################################################
 # This mini script to check if this ip resolve or no [appending on ping command]
 # Important use before run nmap scanner and ETC..
-# 
+# Take hosts.txt file ,, return which resolve/runing
+#
+#
 # Usage!
-# 		 - Take ips.txt file ,, return which resolve/runing
-#		 - python3 tool.py ips.txt results.txt
-###########################################################
+# 	   - take 3 argument (hosts.txt=Required, output.txt=Required, threads=Optional)
+#	   - python3 tool.py subdomains_or_ip.txt results.txt 500
+####################################################################################
 
+if len(sys.argv) < 2:
+	print('Missing ips file [First argument]'); exit(1)
 
+if len(sys.argv) < 3:
+	print('Missing output file [Secound argument]'); exit(1)
 
-ips    = sys.argv[1]
-output = sys.argv[2]
+ips     = sys.argv[1]
+output  = sys.argv[2]
+threads = int(sys.argv[3]) if len(sys.argv) > 3 else int(200)
+
 
 def tool(ip):
-
+	
 	try:
 		res = subprocess.call(['ping', '-c', '1', ip])
-
 		if res == 0:
 			results = open(output,'a+').writelines(ip+'\n')
-		elif res == 2:
-			print("no response from", address)
-		else:
-			print("ping to", address, "failed!")
-
+			
 	except:
 		pass
 
 
-
-with open('ip.txt', 'r') as f:
+with open(ips, 'r') as f:
 	ip = [line.rstrip() for line in open(ips,'r')]
 
-with PoolExecutor(int(1000)) as executor:
-    #0xbahaa: we should give the "Map()" function two arguments:
-    #  1- function name (or function ptr) to the function that checks a SINGLE link
-    #  2- list of paramters (urls list)
+with PoolExecutor(threads) as executor:
 	for _ in executor.map(tool, ip):
 		pass
+
+if ips:
+	open(ips,'r').close()
+
+if output:
+	open(output,'a+').close()
