@@ -1,5 +1,10 @@
-args=("$@")
+#!/bin/bash
 
+###############################################
+# This script need install [amass, asn] tools
+# notic: enter company name, not company domain
+
+args=("$@")
 if [ -z ${args[0]} ];then
 printf "%s\n\n\e[31m Please enter company name: \e[0m" ; read -p '' comapnyName
 else
