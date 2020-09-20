@@ -35,10 +35,10 @@ short arg     | long arg      | Description
 if you want use multiple signs usage -s, --sign /,@,//  ==> seperator via [,]
 
 ## Examples
-*Default usage
+- Default usage
 python3 redir_trick.py --urls https.txt
 
-*put multiple signs  
+- put multiple signs  
 python3 redir_trick.py --urls https.txt --sign @,/
 
 *determine redirect domain/ip
