@@ -1,19 +1,12 @@
+#!/usr/bin/env python
+# By Abdulrahman-Kamel
+
 import sys
 import subprocess
 from concurrent.futures import ThreadPoolExecutor as PoolExecutor
 
-##############################
-# Developer: Abdulrahman-Kamel
-################################################################################
-# This mini script to check if this ip resolve or no [appending on ping command]
-# Important use before run nmap scanner and ETC..
-# Take hosts.txt file ,, return which resolve/runing
-#
-#
-# Usage!
-# 	   - take 3 argument (hosts.txt=Required, output.txt=Required, threads=Optional)
-#	   - python3 tool.py subdomains_or_ip.txt results.txt 500
-####################################################################################
+# python3 tool.py subdomains_or_ip.txt results.txt 500
+
 
 if len(sys.argv) < 2:
 	print('Missing ips file [First argument]'); exit(1)
