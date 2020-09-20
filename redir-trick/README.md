@@ -15,7 +15,7 @@ pip3 install importlib pip
 ```
  if append modules install error use: pip3 install -r requments.txt
 
-or usage manually
+or install manually
 ```bash
 pip3 install requests
 pip3 install argparse
