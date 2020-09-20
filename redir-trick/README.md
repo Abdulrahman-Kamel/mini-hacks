@@ -13,8 +13,9 @@ i am make code to auto install modules only must have modules [importlib, pip] t
 git clone --depth 1 https://github.com/Abdulrahman-Kamel/mini-sec-tasks.git redir-trick
 pip3 install importlib pip
 ```
-### All modules if append error
-```console
+- if append any error when automaticly usage , use pip3 install -r requments.txt
+or usage manually
+```bash
 pip3 install requests
 pip3 install argparse
 pip3 install urllib3
