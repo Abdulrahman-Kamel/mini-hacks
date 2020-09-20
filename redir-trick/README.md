@@ -17,13 +17,22 @@ pip3 install urllib3
 pip3 install futures
 pip3 install sys
 ```
+## Usage
+short arg     | long arg      | Description
+------------- | ------------- |-------------
+-d            | --domain      | Domain name to enumerate subdomains of
+-b            | --bruteforce  | Enable the subbrute bruteforce module
+-p            | --ports       | Scan the found subdomains against specific tcp ports
+-v            | --verbose     | Enable the verbose mode and display results in realtime
+-t            | --threads     | Number of threads to use for subbrute bruteforce
+-e            | --engines     | Specify a comma-separated list of search engines
+-o            | --output      | Save the results to text file
+-h            | --help        | show the help message and exit
+
+
 ## Examples
 python3 redir_trick.py --urls https.txt : Default usage:
 python3 redir_trick.py --urls https.txt --sign @,/ : multiple signs
 python3 redir_trick.py --urls https.txt --redirect google.com : determine redirect domain/ip
 python3 redir_trick.py --urls https.txt --threads 300 --timeout 10 : determine threads and timeout
 
-| Command | Description |
-| --- | --- |
-| git status | List all new or modified files |
-| git diff | Show file differences that haven't been staged |
