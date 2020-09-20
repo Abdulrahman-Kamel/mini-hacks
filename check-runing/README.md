@@ -5,7 +5,7 @@ Take hosts.txt file ,, return which resolve/runing , take 3 argument (hosts.txt=
 
 ## Install
 ```console
-git clone --depth 1 https://github.com/Abdulrahman-Kamel/mini-sec-tasks.git ipResolve
+git clone --depth 1 https://github.com/Abdulrahman-Kamel/mini-hacks.git check-runing
 pip3 install subprocess futures
 ```
 
