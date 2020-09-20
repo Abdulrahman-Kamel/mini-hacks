@@ -32,7 +32,7 @@ short arg     | long arg      | Description
 -o            | --output      | Save the results to text file
 -h            | --help        | show the help message and exit
 
-if you want use multiple signs usage -s, --sign /,@,//  ==> seperator via [,]
+- if you want use multiple signs usage -s, --sign /,@,//  ==> seperator via [,]
 
 ## Examples
 - Default usage
