@@ -1,4 +1,4 @@
-## cidr.sh 
+## cidr
 bash script<br> Get IP Range (CIDR) at The Company <br>
 
 ## check-runing
