@@ -12,7 +12,7 @@ apt-get install whois
 ```
 ## Install
 ```console
-git clone --depth 1 https://github.com/Abdulrahman-Kamel/mini-hacks.git cidr
+svn checkout https://github.com/Abdulrahman-Kamel/mini-hacks/trunk/cidr
 ```
 
 ## Usage
