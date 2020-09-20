@@ -13,7 +13,7 @@ i am make code to auto install modules only must have modules [importlib, pip] t
 git clone --depth 1 https://github.com/Abdulrahman-Kamel/mini-sec-tasks.git redir-trick
 pip3 install importlib pip
 ```
- if append modules install error use: pip3 install -r requments.txt
+ if append modules install error use: sudo pip3 install -r requirements.txt
 
 or install manually
 ```bash
