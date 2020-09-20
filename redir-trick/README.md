@@ -36,14 +36,18 @@ if you want use multiple signs usage -s, --sign /,@,//  ==> seperator via [,]
 
 ## Examples
 - Default usage
+```python
 python3 redir_trick.py --urls https.txt
-
+```
 - put multiple signs  
+```python
 python3 redir_trick.py --urls https.txt --sign @,/
-
+```
 *determine redirect domain/ip
+```python
 python3 redir_trick.py --urls https.txt --redirect google.com
-
+```
 *determine threads and timeout
+```python
 python3 redir_trick.py --urls https.txt --threads 200 --timeout 10
-
+```
