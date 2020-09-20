@@ -7,7 +7,7 @@ the tool will put the sign and request all urls , when found redirect will alert
 ## Installation
 i am make code to auto install modules only must have modules [importlib, pip] then tool will install all modules automatically but if found any error you can install all modules manually
 ```console
-git clone --depth 1 https://github.com/Abdulrahman-Kamel/mini-hacks.git redir-trick
+svn checkout https://github.com/Abdulrahman-Kamel/mini-hacks/trunk/redir-trick
 pip3 install importlib pip
 ```
  if append modules install error use: sudo pip3 install -r requirements.txt
