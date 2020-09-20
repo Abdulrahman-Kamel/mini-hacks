@@ -6,7 +6,7 @@ bash script to get IP Range (CIDR) at The Company <br>
 ```console
 snap install amass
 ```
-- asn
+- whois
 ```console
 apt-get install whois
 ```
