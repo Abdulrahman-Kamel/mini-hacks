@@ -1,11 +1,8 @@
 ## About script
-this tool test open redirect vulnerability to each http subdomain via signs EX.. [/, @, etc..] 
-
-use any tool to know what is subdomains which run http/https EX.. httprobe or any Tec.
-
-cat subdomains | httprobe > https.txt | use tool on this file [https.txt]
-
-the tool will put the sign and request all urls , when found redirect will alert you.
+this tool test open redirect vulnerability to each http subdomain via signs EX.. [/, @, etc..] <br> 
+use any tool to know what is subdomains which run http/https EX.. httprobe or any Tec. <br>
+cat subdomains | httprobe > https.txt | use tool on this file [https.txt] <br>
+the tool will put the sign and request all urls , when found redirect will alert you. <br>
 
 ## Installation
 i am make code to auto install modules only must have modules [importlib, pip] then tool will install all modules automatically but if found any error you can install all modules manually
