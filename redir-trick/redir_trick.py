@@ -8,15 +8,14 @@ import pip 	 # to install modules
 def install(package):
 	spam_spec   = importlib.util.find_spec(package)
 	check_found = spam_spec is not None
-
 	if check_found == False:
 		pip.main(['install', package])
 
-install('requests')	# instead of pip3 install requests
-install('argparse')	# instead of pip3 install argparse
-install('urllib3')	# instead of pip3 install urllib3
-install('futures')	# instead of pip3 install futures
-install('sys')		# instead of pip3 install sys
+install('requests')		# instead of pip3 install requests
+install('argparse')		# instead of pip3 install argparse
+install('urllib3')		# instead of pip3 install urllib3
+install('concurrent.futures')	# instead of pip3 install concurrent.futures
+#install('sys')			# instead of pip3 install sys
 
 
 import requests
@@ -32,11 +31,11 @@ parser_arg_menu.add_argument(
 metavar=""
 )
 parser_arg_menu.add_argument(
-"-s" , "--sign" , help="Determine one or multiple sign which put every url [Default = //]",
+"-s" , "--sign" , help="Determine one or multiple signs which put every url [Default = //]",
 metavar=""
 )
 parser_arg_menu.add_argument(
-"-r" , "--redirect" , help="Determine domain/ip which will redirect [Default = bing.com] ",
+"-r" , "--redirect" , help="Determine domain/ip which will redirect [Default = bing.com]",
 metavar=""
 )
 parser_arg_menu.add_argument(
@@ -48,7 +47,7 @@ parser_arg_menu.add_argument(
 metavar=""
 )
 parser_arg_menu.add_argument(
-"-o", "--output" ,help="Output results file", 
+"-o", "--output" ,help="Save the results to text file", 
 metavar=""
 )
 
@@ -82,7 +81,6 @@ if arg_menu.sign:
 
 else:
 	signs = "/"
-
 
 # func to write in output file
 def write(value):
@@ -135,16 +133,17 @@ def tool(url):
 		except Exception as er:
 			pass
 
+if __name__ == '__main__':
 
-# make single url from file
-with open(arg_menu.urls, 'r') as f:
-    single_url = [line.rstrip() for line in f]
+	# make single url from file
+	with open(arg_menu.urls, 'r') as f:
+	    single_url = [line.rstrip() for line in f]
 
-# run tool via multipleProccess
-with PoolExecutor(max_threads) as executor:
-    for _ in executor.map(tool, single_url):
-       pass
+	# run tool via multipleProccess
+	with PoolExecutor(max_threads) as executor:
+	    for _ in executor.map(tool, single_url):
+	       pass
 
-# close file
-if arg_menu.output:
-	output.close()
+	# close file
+	if arg_menu.output:
+		output.close()
