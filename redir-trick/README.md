@@ -32,6 +32,7 @@ short arg     | long arg      | Description
 -o            | --output      | Save the results to text file
 -h            | --help        | show the help message and exit
 
+if you want use multiple signs usage -s, --sign /,@,//  ==> seperator via [,]
 
 ## Examples
 python3 redir_trick.py --urls https.txt : Default usage:
