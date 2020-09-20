@@ -20,12 +20,11 @@ pip3 install sys
 ## Usage
 short arg     | long arg      | Description
 ------------- | ------------- |-------------
--d            | --domain      | Domain name to enumerate subdomains of
--b            | --bruteforce  | Enable the subbrute bruteforce module
--p            | --ports       | Scan the found subdomains against specific tcp ports
--v            | --verbose     | Enable the verbose mode and display results in realtime
--t            | --threads     | Number of threads to use for subbrute bruteforce
--e            | --engines     | Specify a comma-separated list of search engines
+-u            | --urls        | File contain urls
+-s            | --sign        | Determine one or multiple sign which put every url [Default = //]
+-r            | --redirect    | Determine domain/ip which will redirect [Default = bing.com]
+-t            | --threads     | Threads number to multiProccess [Default = 100]
+-T            | --timeout     | Time out waiting if delay request , [Default 3]
 -o            | --output      | Save the results to text file
 -h            | --help        | show the help message and exit
 
