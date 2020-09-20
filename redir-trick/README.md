@@ -13,7 +13,7 @@ i am make code to auto install modules only must have modules [importlib, pip] t
 git clone --depth 1 https://github.com/Abdulrahman-Kamel/mini-sec-tasks.git redir-trick
 pip3 install importlib pip
 ```
-All modules
+### All modules
 ```
 pip3 install requests
 pip3 install argparse
@@ -35,7 +35,10 @@ short arg     | long arg      | Description
 
 ## Examples
 python3 redir_trick.py --urls https.txt : Default usage:
+
 python3 redir_trick.py --urls https.txt --sign @,/ : multiple signs
+
 python3 redir_trick.py --urls https.txt --redirect google.com : determine redirect domain/ip
+
 python3 redir_trick.py --urls https.txt --threads 200 --timeout 10 : determine threads and timeout
 
