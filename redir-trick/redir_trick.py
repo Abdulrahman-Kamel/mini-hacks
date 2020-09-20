@@ -12,11 +12,11 @@ def install(package):
 	if check_found == False:
 		pip.main(['install', package])
 
-install('requests')   # instead of pip3 install requests
-install('argparse')   # instead of pip3 install argparse
-install('urllib3') 	  # instead of pip3 install urllib3
-install('futures')	  # instead of pip3 install futures
-install('sys') 		  # instead of pip3 install sys
+install('requests')		# instead of pip3 install requests
+install('argparse')		# instead of pip3 install argparse
+install('urllib3')		# instead of pip3 install urllib3
+install('futures')		# instead of pip3 install futures
+install('sys')			# instead of pip3 install sys
 
 
 import requests
