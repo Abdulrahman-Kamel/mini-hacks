@@ -1,6 +1,24 @@
 #!/usr/bin/env python
 # By Abdulrahman Kamel
 
+import importlib # to check modules
+import pip 		 # to install modules
+
+# func to check and install modules
+def install(package):
+	spam_spec   = importlib.util.find_spec(package)
+	check_found = spam_spec is not None
+
+	if check_found == False:
+		pip.main(['install', package])
+
+install('requests')   # instead of pip3 install requests
+install('argparse')   # instead of pip3 install argparse
+install('urllib3') 	  # instead of pip3 install urllib3
+install('futures')	  # instead of pip3 install futures
+install('sys') 		  # instead of pip3 install sys
+
+
 import requests
 import argparse
 import urllib3 
@@ -9,9 +27,8 @@ from sys import exit
 
 # set arguments
 parser_arg_menu = argparse.ArgumentParser(epilog='Example: python3 redir_tricks.py --urls https.txt ',prog='tool', formatter_class=lambda prog: argparse.HelpFormatter(prog, max_help_position=15))
-
 parser_arg_menu.add_argument(
-"-u" , "--urls" , help="File contain urls \n\n\n\n",
+"-u" , "--urls" , help="File contain urls",
 metavar=""
 )
 parser_arg_menu.add_argument(
