@@ -9,12 +9,12 @@ the tool will put the sign and request all urls , when found redirect will alert
 
 ## Installation
 i am make code to auto install modules only must have modules [importlib, pip] then tool will install all modules automatically but if found any error you can install all modules manually
-```
+```bash
 git clone --depth 1 https://github.com/Abdulrahman-Kamel/mini-sec-tasks.git redir-trick
 pip3 install importlib pip
 ```
 ### All modules
-```
+```bash
 pip3 install requests
 pip3 install argparse
 pip3 install urllib3
@@ -35,11 +35,15 @@ short arg     | long arg      | Description
 if you want use multiple signs usage -s, --sign /,@,//  ==> seperator via [,]
 
 ## Examples
-python3 redir_trick.py --urls https.txt : Default usage:
+*Default usage
+python3 redir_trick.py --urls https.txt
 
-python3 redir_trick.py --urls https.txt --sign @,/ : multiple signs
+*put multiple signs  
+python3 redir_trick.py --urls https.txt --sign @,/
 
-python3 redir_trick.py --urls https.txt --redirect google.com : determine redirect domain/ip
+*determine redirect domain/ip
+python3 redir_trick.py --urls https.txt --redirect google.com
 
-python3 redir_trick.py --urls https.txt --threads 200 --timeout 10 : determine threads and timeout
+*determine threads and timeout
+python3 redir_trick.py --urls https.txt --threads 200 --timeout 10
 
