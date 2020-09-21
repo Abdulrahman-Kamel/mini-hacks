@@ -24,7 +24,7 @@ pip3 install sys
 short arg     | long arg      | Description
 ------------- | ------------- |-------------
 -u            | --urls        | File contain urls
--s            | --sign        | Determine one or multiple signs which put every url [Default = //]
+-s            | --sign        | Determine one or multiple signs which put every url [Default = /]
 -r            | --redirect    | Determine domain/ip which will redirect [Default = bing.com]
 -t            | --threads     | Threads number to multiProccess [Default = 100]
 -T            | --timeout     | Time out waiting if delay request , [Default 3]
