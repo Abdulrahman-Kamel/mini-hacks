@@ -52,7 +52,7 @@ metavar=""
 )
 
 # refrences variables
-arg_menu = parser_arg_menu.parse_args()
+arg_menu    = parser_arg_menu.parse_args()
 max_threads = int(arg_menu.threads) if arg_menu.threads  else int(100)
 max_timeout = int(arg_menu.timeout) if arg_menu.timeout  else int(3)
 redirect_to = arg_menu.redirect     if arg_menu.redirect else "bing.com" 
