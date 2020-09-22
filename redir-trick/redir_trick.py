@@ -55,7 +55,7 @@ metavar=""
 arg_menu = parser_arg_menu.parse_args()
 max_threads = int(arg_menu.threads) if arg_menu.threads  else int(100)
 max_timeout = int(arg_menu.timeout) if arg_menu.timeout  else int(3)
-redirect_to = arg_menu.redirect 	if arg_menu.redirect else "bing.com" 
+redirect_to = arg_menu.redirect     if arg_menu.redirect else "bing.com" 
 
 # colors
 h = '\035[90m'	 # Header
@@ -144,6 +144,9 @@ if __name__ == '__main__':
 	    for _ in executor.map(tool, single_url):
 	       pass
 
-	# close file
+	# close files
+	if arg_menu.urls:
+		open(arg_menu.urls , 'r').close()
+
 	if arg_menu.output:
 		output.close()
