@@ -3,6 +3,8 @@
 ###############################################
 # This script need install [amass, asn] tools
 # notic: enter company name, not company domain
+# usage: bash cidr.sh yahoo output.txt
+
 
 args=("$@")
 if [ -z ${args[0]} ];then
