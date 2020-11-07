@@ -25,13 +25,13 @@ short arg     | long arg      | Description
 ------------- | ------------- |-------------
 -u            | --urls        | File contain urls
 -s            | --sign        | Determine one or multiple signs which put every url [Default = /]
--r            | --redirect    | Determine domain/ip which will redirect [Default = bing.com]
+-m            | --multiple    | will try many testing [open-redirect] on url 
 -t            | --threads     | Threads number to multiProccess [Default = 100]
 -T            | --timeout     | Time out waiting if delay request , [Default 3]
 -o            | --output      | Save the results to text file
 -h            | --help        | show the help message and exit
 
-if you want use multiple signs usage -s, --sign /,@,//  ==> seperator via [,]
+if you want use multiple signs usage -s, --sign /,\/,//,\/\/  ==> seperator via [,]
 
 ## Examples
 - Default usage
@@ -49,4 +49,8 @@ python3 redir_trick.py --urls https.txt --redirect google.com
 - Determine threads and timeout
 ```python
 python3 redir_trick.py --urls https.txt --threads 200 --timeout 10
+```
+- try many testing
+```python
+python3 redir_trick.py --urls https.txt --threads 200 --timeout 10 -m
 ```
