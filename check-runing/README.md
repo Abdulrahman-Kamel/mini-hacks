@@ -5,6 +5,7 @@ Take hosts.txt file ,, return which resolve/runing , take 3 argument (hosts.txt=
 
 ## Install
 ```console
+sudo apt install subversion
 svn checkout https://github.com/Abdulrahman-Kamel/mini-hacks/trunk/check-runing
 pip3 install subprocess futures
 ```
