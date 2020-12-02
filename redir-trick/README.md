@@ -1,5 +1,5 @@
 ## About script
-this tool test open redirect vulnerability to each http subdomain via signs EX.. [/, //,\/, etc..] <br> 
+this tool test open redirect vulnerability to each http subdomain via signs EX.. [/, //,\\/, etc..] <br> 
 use any tool to know what is subdomains which run http/https EX.. httprobe or any Tec. <br>
 cat subdomains | httprobe > https.txt | use tool on this file [https.txt] <br>
 the tool will put the sign and request all urls , when found redirect will alert you. <br>
