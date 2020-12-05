@@ -10,7 +10,7 @@ short arg     | long arg      | Description
 -s            | --subdomains  | File contains subdomains
 -p            | --ip          | result ip only
 -c            | --creds    	  | File contain http auth creds
--p            | --proxies     | File contains proxy:port
+-p            | --proxies     | File contains proxy:port, if want
 -t            | --threads     | Thread number to MultiProccess [speed tool] , Default 500
 -o            | --output      | save results in file
 -h            | --help        | show the help message and exit
