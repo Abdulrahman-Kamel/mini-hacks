@@ -1,5 +1,5 @@
 ## About script
-bash script to get IP Range (CIDR) at The Company <br>
+bash script to get IP Range (CIDR) at The Company by name<br>
 
 ## Requments
 - amass tool
@@ -9,10 +9,6 @@ snap install amass
 - whois
 ```console
 apt-get install whois
-```
-## Install
-```console
-svn checkout https://github.com/Abdulrahman-Kamel/mini-hacks/trunk/cidr
 ```
 
 ## Usage
