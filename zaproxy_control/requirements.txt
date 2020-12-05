@@ -1,5 +1,5 @@
 argparse
 time
 pprint
-zapv2
-os
+python-owasp-zap-v2.4
+os-sys
