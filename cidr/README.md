@@ -13,7 +13,7 @@ apt-get install whois
 ## install
 ```console 
 sudo apt install subversion
-svn checkout https://github.com/Abdulrahman-Kamel/mini-hacks/trunk/check-runing
+svn checkout https://github.com/Abdulrahman-Kamel/mini-hacks/trunk/cidr
 ```
 ## Usage
 ```bash
