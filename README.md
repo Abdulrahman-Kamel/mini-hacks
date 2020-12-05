@@ -1,5 +1,5 @@
 ## cidr
-Get IP Range (CIDR) at The Company by name<br>
+Get IP Ranges (CIDR) at The Company by name<br>
 
 ## check-runing
 Take ip/domain list file then return alive ip/domain 
