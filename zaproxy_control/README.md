@@ -1,6 +1,6 @@
 ## About script
 this script to simple terminal usage zaproxy to {crawlling and scan} <br>
-taken urls or subdomains file , then make this choose <br>
+taken urls or subdomains file , then choose from this arguments {-c, --crawl | -sc, --scan} <br>
 crawlling , active scan , passive scan , output the vulnerabilities in nice report <br><br>
 NOTIC: zaproxy is very good to crawlling websites , i advice you use zaproxy to crawlling and enable active scan by argument to fast get vulnerabilities 
 
