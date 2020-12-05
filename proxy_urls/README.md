@@ -4,7 +4,7 @@ this script take urls_file.txt then pass this urls to any proxy determined <br>
 ### Suggest some uses
 sometimes we want use burpsuite scanner automaticly without browser the site <br>
 1- open burpsuite and put the primary domain in scope then enable scan with option suite scope <br>
-2- run this tool and take urls_file.txt , now burp suite scan any url from this file <br>
+2- run this tool and take urls_file.txt , now burp suite scan any url from this file <br><br>
 NOTIC: if dont have urls you can get from web-archive site or crawlling the site using any tool ex.. hakrawler
 
 ## Installation
