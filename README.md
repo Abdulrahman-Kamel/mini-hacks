@@ -1,14 +1,14 @@
 ## cidr
 Get IP Ranges (CIDR) at The Company by name<br>
 
-## check-runing
-Take ip/domain list file then return alive ip/domain 
-
 ## iphost
-take subdomains.txt file then give you subdomain with ip or ip only
+take subdomains file then give you subdomain with ip or ip only, if you make port scan {sometimes found many subs have the same ip} <br> now you have all ips subs > run sort -u command on results file to filter this ips and delete the duplicates , make portscan :)
+
+## check-runing
+Take ips or domains file -> filter and get alive 
 
 ## proxy_urls
-take urls_file.txt then pass urls to any proxy determined ex.. {burpsuite to auto scan}
+take urls_file.txt then pass urls to any proxy determined <br> example usage.. {to burpsuite to auto scan}
 
 ## zaproxy_control
-simple terminal usage zaproxy to {crawlling and scan}
+zaproxy to crawlling and scan from terminal {fast get many crawlled urls and vulnerabilities in file}
