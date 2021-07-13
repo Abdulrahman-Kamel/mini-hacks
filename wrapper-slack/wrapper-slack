@@ -1,0 +1,27 @@
+#!/usr/bin/python3
+slack_hook = "T026X738F37/B027Y08HJ4T/kzdySrj3tfLiXfvDEbmFAVU3"
+
+from requests import post as sendPostRequest
+from urllib3 import disable_warnings
+from sys import argv
+
+# skip ssl error
+disable_warnings()
+
+def slack(message):
+	slack_api_url = "https://hooks.slack.com/services/{}".format(slack_hook)
+	json_data     = {"text":str(message)}
+
+	try:
+		response = sendPostRequest(slack_api_url, json=json_data, verify=False)
+	except:
+		pass
+
+unknown_message = False
+if len(argv) < 2:
+	unknown_message = 'Unknown mission is finish \nNotic: you forget to enter message'
+
+if unknown_message != False:
+	slack(unknown_message)
+else:
+	slack("Mission "+str(argv[1])+" is finish") 
