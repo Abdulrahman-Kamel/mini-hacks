@@ -7,7 +7,6 @@ class Service:
         self.port_protocol = port_protocol
         self.frequency = frequency
         self.comments = comments
-        # Initialize these as False; they will be set based on user input
         self.include_name = False
         self.include_frequency = False
         self.include_comments = False
@@ -32,7 +31,6 @@ class Service:
 
 class ServiceParser:
     def __init__(self):
-        # Hardcoded file path for the Nmap services file
         self.file_path = 'provider.txt'
         self.services = []
 
